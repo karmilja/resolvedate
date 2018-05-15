@@ -2,9 +2,7 @@ library(dplyr)
 library(markovchain)
 library(lubridate)
 
-load("DTMCJIRA.RData")
-load("avroissues.RData")
-load("transitionTimes.RData")
+load("api.RData")
 
 #* @get /api/issue/<issue>/resolve-prediction
 resolvedPrediction <- function(
